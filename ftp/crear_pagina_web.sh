@@ -25,7 +25,7 @@ fi
 #Añade el alias y reinicia apache
 if [ $continue -eq 1 ]
 then
-        printf "\t Alias "/$departamento" "/home/$usuario/web_departamento"" >>  /etc/apache2/sites-available/alias_departamentos
+        printf "\n \t Alias "/$departamento" "/home/$usuario/web_departamento"" >>  /etc/apache2/sites-available/alias_departamentos
         systemctl restart apache2
 fi
 
